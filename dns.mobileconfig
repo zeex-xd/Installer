@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
   <key>PayloadDisplayName</key>
-  <string>Ascent Installer DNS</string>
+  <string>Ascent DNS</string>
   <key>PayloadDescription</key>
-  <string>Anti-Revoke</string>
+  <string>Anti-Revoke.</string>
   <key>PayloadIdentifier</key>
   <string>com.ascent.nextdns.profile</string>
   <key>PayloadScope</key>
@@ -64,7 +64,7 @@
       <key>PayloadDisplayName</key>
       <string>NextDNS Anti-Revoke</string>
       <key>PayloadOrganization</key>
-      <string>Ascent Team</string>
+      <string>Zeex</string>
       <key>PayloadVersion</key>
       <integer>1</integer>
     </dict>
@@ -81,7 +81,7 @@
       <key>URL</key>
       <string>https://installer.degolado.workers.dev/app</string>
       <key>PayloadDisplayName</key>
-      <string>Ascent Portal</string>
+      <string>Ascent Installer</string>
       <key>PayloadIdentifier</key>
       <string>com.apple.webClip.managed.ascent</string>
       <key>PayloadOrganization</key>
