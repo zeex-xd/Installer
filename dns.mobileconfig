@@ -2,88 +2,100 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>PayloadContent</key>
-	<array>
-		<dict>
-			<key>DNSSettings</key>
-			<dict>
-				<key>DNSProtocol</key>
-				<string>HTTPS</string>
-				<key>ServerAddresses</key>
-				<array>
-					<string>1.1.1.1</string>
-					<string>1.0.0.1</string>
-				</array>
-				<key>ServerURL</key>
-				<string>https://khoindvn.io.vn</string>
-				<key>SupplementalMatchDomains</key>
-				<array>
-					<string>certs.apple.com</string>
-					<string>crl.apple.com</string>
-					<string>crl3.digicert.com</string>
-					<string>crl4.digicert.com</string>
-					<string>ocsp.apple.com</string>
-					<string>ocsp.digicert.cn</string>
-					<string>ocsp.digicert.com</string>
-					<string>ocsp2.apple.com</string>
-					<string>valid.apple.com</string>
-					<string>vuvankhoi.com</string>
-					<string>analytics.apple.com</string>
-					<string>khoindvn.com</string>
-					<string>ppq.apple.com</string>
-				</array>
-			</dict>
-			<key>PayloadDescription</key>
-			<string>Configures device to block Apple Revoke Servers</string>
-			<key>PayloadDisplayName</key>
-			<string>Ascent Anti-Revoke</string>
-			<key>PayloadIdentifier</key>
-			<string>com.ascent.dnsSettings.managed</string>
-			<key>PayloadOrganization</key>
-			<string>Ascent Team</string>
-			<key>PayloadType</key>
-			<string>com.apple.dnsSettings.managed</string>
-			<key>PayloadUUID</key>
-			<string>590396fe-a5b1-4778-a579-5b5ef931fdc7</string>
-			<key>PayloadVersion</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>FullScreen</key>
-			<true/>
-			<key>IgnoreManifestScope</key>
-			<true/>
-			<key>IsRemovable</key>
-			<true/>
-			<key>Label</key>
-			<string>Ascent</string>
-			<key>URL</key>
-			<string>https://installer.degolado.workers.dev/app</string>
-			<key>PayloadDisplayName</key>
-			<string>Ascent Portal</string>
-			<key>PayloadIdentifier</key>
-			<string>com.apple.webClip.managed.ascent</string>
-			<key>PayloadOrganization</key>
-			<string>Ascent Team</string>
-			<key>PayloadType</key>
-			<string>com.apple.webClip.managed</string>
-			<key>PayloadUUID</key>
-			<string>34B78E98-B746-4A69-A771-1D19516E1B9F</string>
-			<key>PayloadVersion</key>
-			<integer>1</integer>
-			<key>Precomposed</key>
-			<true/>
-		</dict>
-	</array>
-	<key>PayloadDisplayName</key>
-	<string>Ascent DNS &amp; Portal</string>
-	<key>PayloadIdentifier</key>
-	<string>com.ascent.profile.main</string>
-	<key>PayloadType</key>
-	<string>Configuration</string>
-	<key>PayloadUUID</key>
-	<string>cd0b011b-c3e7-45f3-8bac-5139a8da8bd5</string>
-	<key>PayloadVersion</key>
-	<integer>1</integer>
+  <key>PayloadDisplayName</key>
+  <string>Ascent DNS &amp; Portal</string>
+  <key>PayloadDescription</key>
+  <string>Proteção Anti-Revoke impulsionada pelo NextDNS + Atalho da Loja do Ascent.</string>
+  <key>PayloadIdentifier</key>
+  <string>com.ascent.nextdns.profile</string>
+  <key>PayloadScope</key>
+  <string>System</string>
+  <key>PayloadType</key>
+  <string>Configuration</string>
+  <key>PayloadUUID</key>
+  <string>A1E2F262-DB73-40F6-BD22-2E42A43A3C94</string>
+  <key>PayloadVersion</key>
+  <integer>1</integer>
+  <key>PayloadContent</key>
+  <array>
+    
+    <dict>
+      <key>DNSSettings</key>
+      <dict>
+        <key>DNSProtocol</key>
+        <string>HTTPS</string>
+        <key>ServerURL</key>
+        <string>https://apple.dns.nextdns.io/e5aee1</string>
+      </dict>
+      <key>OnDemandRules</key>
+      <array>
+        <dict>
+          <key>Action</key>
+          <string>EvaluateConnection</string>
+          <key>ActionParameters</key>
+          <array>
+            <dict>
+              <key>DomainAction</key>
+              <string>NeverConnect</string>
+              <key>Domains</key>
+              <array>
+                <string>captive.apple.com</string>
+                <string>3gppnetwork.org</string>
+                <string>dav.orange.fr</string>
+                <string>vvm.mobistar.be</string>
+                <string>vvm.mstore.msg.t-mobile.com</string>
+                <string>tma.vvm.mone.pan-net.eu</string>
+                <string>vvm.ee.co.uk</string>
+              </array>
+            </dict>
+          </array>
+        </dict>
+        <dict>
+          <key>Action</key>
+          <string>Connect</string>
+        </dict>
+      </array>
+      <key>PayloadType</key>
+      <string>com.apple.dnsSettings.managed</string>
+      <key>PayloadIdentifier</key>
+      <string>io.nextdns.e5aee1.profile.dnsSettings.managed</string>
+      <key>PayloadUUID</key>
+      <string>A1E2F262-DB73-40F6-BD22-2E42A43A3C94.e5aee1.dnsSettings.managed</string>
+      <key>PayloadDisplayName</key>
+      <string>NextDNS Anti-Revoke</string>
+      <key>PayloadOrganization</key>
+      <string>Ascent Team</string>
+      <key>PayloadVersion</key>
+      <integer>1</integer>
+    </dict>
+
+    <dict>
+      <key>FullScreen</key>
+      <true/>
+      <key>IgnoreManifestScope</key>
+      <true/>
+      <key>IsRemovable</key>
+      <true/>
+      <key>Label</key>
+      <string>Ascent</string>
+      <key>URL</key>
+      <string>https://installer.degolado.workers.dev/app</string>
+      <key>PayloadDisplayName</key>
+      <string>Ascent Portal</string>
+      <key>PayloadIdentifier</key>
+      <string>com.apple.webClip.managed.ascent</string>
+      <key>PayloadOrganization</key>
+      <string>Ascent Team</string>
+      <key>PayloadType</key>
+      <string>com.apple.webClip.managed</string>
+      <key>PayloadUUID</key>
+      <string>34B78E98-B746-4A69-A771-1D19516E1B9F</string>
+      <key>PayloadVersion</key>
+      <integer>1</integer>
+      <key>Precomposed</key>
+      <true/>
+    </dict>
+
+  </array>
 </dict>
 </plist>
