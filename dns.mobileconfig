@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
   <key>PayloadDisplayName</key>
-  <string>Ascent DNS &amp; Portal</string>
+  <string>Ascent Installer DNS</string>
   <key>PayloadDescription</key>
-  <string>Proteção Anti-Revoke (NextDNS) + Atalho da Loja do Ascent.</string>
+  <string>Anti-Revoke</string>
   <key>PayloadIdentifier</key>
   <string>com.ascent.nextdns.profile</string>
   <key>PayloadScope</key>
