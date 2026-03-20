@@ -15,14 +15,21 @@
 					<string>1.0.0.1</string>
 				</array>
 				<key>ServerURL</key>
-				<string>https://cloudflare-dns.com/dns-query</string>
+				<string>https://khoindvn.io.vn</string>
 				<key>SupplementalMatchDomains</key>
 				<array>
 					<string>certs.apple.com</string>
 					<string>crl.apple.com</string>
+					<string>crl3.digicert.com</string>
+					<string>crl4.digicert.com</string>
 					<string>ocsp.apple.com</string>
+					<string>ocsp.digicert.cn</string>
+					<string>ocsp.digicert.com</string>
 					<string>ocsp2.apple.com</string>
 					<string>valid.apple.com</string>
+					<string>vuvankhoi.com</string>
+					<string>analytics.apple.com</string>
+					<string>khoindvn.com</string>
 					<string>ppq.apple.com</string>
 				</array>
 			</dict>
