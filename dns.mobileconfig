@@ -60,7 +60,7 @@
       <key>PayloadUUID</key>
       <string>A1E2F262-DB73-40F6-BD22-2E42A43A3C94.226985.dnsSettings.managed</string>
       <key>PayloadDisplayName</key>
-      <string>NextDNS Anti-Revoke</string>
+      <string>Anti-Revoke</string>
       <key>PayloadOrganization</key>
       <string>Zeex</string>
       <key>PayloadVersion</key>
