@@ -29,13 +29,15 @@
         <array>
           <string>certs.apple.com</string>
           <string>crl.apple.com</string>
-          <string>crl3.digicert.com</string>
-          <string>crl4.digicert.com</string>
           <string>ocsp.apple.com</string>
-          <string>ocsp.digicert.cn</string>
-          <string>ocsp.digicert.com</string>
           <string>ocsp2.apple.com</string>
           <string>valid.apple.com</string>
+          <string>analytics.apple.com</string>
+          <string>ocsp.digicert.com</string>
+          <string>ocsp.digicert.cn</string>
+          <string>crl3.digicert.com</string>
+          <string>crl4.digicert.com</string>
+          <string>pudim.com.br</string>
         </array>
       </dict>
       <key>OnDemandRules</key>
