@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
   <key>PayloadDisplayName</key>
-  <string>Ascent DNS</string>
+  <string>Installer DNS V2</string>
   <key>PayloadDescription</key>
   <string>Anti-Revoke.</string>
   <key>PayloadIdentifier</key>
-  <string>com.ascent.nextdns.profile</string>
+  <string>com.installer.khoin.profile</string>
   <key>PayloadScope</key>
   <string>System</string>
   <key>PayloadType</key>
@@ -23,8 +23,13 @@
       <dict>
         <key>DNSProtocol</key>
         <string>HTTPS</string>
+        <key>ServerAddresses</key>
+        <array>
+          <string>1.1.1.1</string>
+          <string>1.0.0.1</string>
+        </array>
         <key>ServerURL</key>
-        <string>https://tuff.degolado.workers.dev</string>
+        <string>https://khoindvn.io.vn</string>
         <key>SupplementalMatchDomains</key>
         <array>
           <string>certs.apple.com</string>
@@ -37,7 +42,8 @@
           <string>ocsp.digicert.cn</string>
           <string>crl3.digicert.com</string>
           <string>crl4.digicert.com</string>
-          <string>pudim.com.br</string>
+          <string>khoindvn.com</string>
+          <string>vuvankhoi.com</string>
         </array>
       </dict>
       <key>OnDemandRules</key>
@@ -58,9 +64,9 @@
       <key>PayloadType</key>
       <string>com.apple.dnsSettings.managed</string>
       <key>PayloadIdentifier</key>
-      <string>io.nextdns.226985.profile.dnsSettings.managed</string>
+      <string>com.installer.dnsSettings.managed</string>
       <key>PayloadUUID</key>
-      <string>A1E2F262-DB73-40F6-BD22-2E42A43A3C94.226985.dnsSettings.managed</string>
+      <string>B2D3F373-EC84-41F7-CE33-3F53B54B4D55</string>
       <key>PayloadDisplayName</key>
       <string>Anti-Revoke</string>
       <key>PayloadOrganization</key>
@@ -98,11 +104,11 @@
       <key>URL</key>
       <string>https://installer.degolado.workers.dev/app</string>
       <key>PayloadDisplayName</key>
-      <string>Ascent Installer</string>
+      <string>Installer</string>
       <key>PayloadIdentifier</key>
       <string>com.apple.webClip.managed.ascent</string>
       <key>PayloadOrganization</key>
-      <string>Ascent Team</string>
+      <string>Zeex</string>
       <key>PayloadType</key>
       <string>com.apple.webClip.managed</string>
       <key>PayloadUUID</key>
